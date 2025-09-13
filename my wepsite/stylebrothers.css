@@ -45,6 +45,7 @@ header .logo{
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: .4s;
+  text-decoration: none;
 }
 
 header ul{
@@ -66,6 +67,7 @@ header ul li a{
   border: 2px solid #fff;
   border-radius: 20px;
   transition: .4s;
+    text-decoration: none;
 }
 header ul li a:hover , .active {
    background:#fff;
