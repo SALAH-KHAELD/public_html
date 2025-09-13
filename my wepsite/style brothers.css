@@ -1,0 +1,168 @@
+/* تنسيقات صفحة My Brothers */
+
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #2f0120 0%, #10001f 50%, #0a0010 100%);
+  min-height: 90vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+  box-sizing: border-box;
+  position: relative;
+  color: white;
+  transition: .4s;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header{
+  position: fixed;
+  top: 10px;
+  left: 0;
+  right: 5px;
+  width: 95%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 5px 20px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 40px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: .4s;
+}
+
+header .logo{
+  font-size: 30px;
+  color: #f3f3f3;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: .4s;
+}
+
+header ul{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+header ul li{
+  margin: 0 15px;
+  transition: .4s; 
+}
+header ul li a{
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 6px 15px;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  transition: .4s;
+}
+header ul li a:hover , .active {
+   background:#fff;
+   color: #200016;  
+    box-shadow: 0 0 10px #000000, 0 0 40px #ff2600, 0 0 80px #ff4b2b;
+}
+
+.brothers-section {
+  max-width: 1000px;
+  margin: 120px auto 40px;
+  padding: 40px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background: rgba(10, 1, 14, 0.9);
+  border-radius: 25px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+}
+
+.brother-card {
+  background: rgba(50, 2, 60, 0.8);
+  border-radius: 25px;
+  margin: 30px 0;
+  padding: 25px 30px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+  width: 700px;
+  max-width: 95%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* ...existing code... */
+.brother-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.15);
+} 
+.brother-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  margin-bottom: 14px;
+  background: #222; 
+}
+
+.brother-card p {
+  font-size: 1.2rem;
+  color: #ff0000;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.lang-card{
+  display: inline-block;
+  width: 150px;
+  height: 163px;
+  margin: 20px;
+  background: rgba(0,0,0,0.3);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255,255,255,0.3);
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  transition: .4s;
+}
+.lang-card:hover{
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 0 10px #060606, 0 0 40px #ff2600, 0 0 80px #ff4b2b;
+}
+.lang-image {
+  width: 100px !important;
+  height: 100px !important;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+.lang-card p{
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+ margin: 0;
+ margin-bottom: 10px;
+}
+.lang-card p:hover{
+  color: #ff4b2b;
+}
+
